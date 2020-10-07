@@ -1,8 +1,8 @@
-## DATA 512 A1: Data Curation
-### Goals:
+# DATA 512 A1: Data Curation
+## Goals:
 The goal of this assignment is to construct, analyze, and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through August 30 2020.
 
-### Data Source:
+## Data Source:
 Liscence : [MIT](https://github.com/ankitapal189/data-512/blob/main/data-512-a1/LICENSE.md)<BR>
 Terms of Use : https://www.mediawiki.org/wiki/Wikimedia_REST_API#Terms_and_conditions<BR>
 We used 2 APIs:<BR>
@@ -11,7 +11,7 @@ December 2007 - July 2016.<BR>
 2.The Pageviews API  ([Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews), [Endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end))
 July 2015 - August 2020<BR>2.
 
-### Describe the values of fields in the final data file:
+## Describe the values of fields in the final data file:
 | Column | Description |
 |--------|-------------|
 | Year | Year|
