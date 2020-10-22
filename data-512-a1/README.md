@@ -1,4 +1,4 @@
-# DATA 512 A1: Data Curation
+# DATA 512 A1: Bias in data
 ## Goals:
 The goal of this assignment is to construct, analyze, and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through August 30 2020.
 
