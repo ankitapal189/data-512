@@ -13,8 +13,16 @@ Liscence : [MIT](https://github.com/ankitapal189/data-512/blob/main/data-512-a1/
 Terms of Use : https://www.mediawiki.org/wiki/Wikimedia_REST_API#Terms_and_conditions<BR>
  <BR>
  We used 2 Daatsets:<BR>
-    1. Wulczyn, Ellery; Thain, Nithum; Dixon, Lucas (2017): Wikipedia Talk Labels: Personal Attacks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4054689.v6<BR>
-  2.Thain, Nithum; Dixon, Lucas; Wulczyn, Ellery (2017): Wikipedia Talk Labels: Toxicity. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4563973.v2
+#### Personal Attacks: 
+
+100k labeled comments from English Wikipedia by approximately of 10 annotators via Crowdflower on whether it contains a personal attack. We also include some demographic data for each crowd-worker.
+
+Wulczyn, Ellery; Thain, Nithum; Dixon, Lucas (2017): Wikipedia Talk Labels: Personal Attacks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4054689.v6<BR>\
+#### Toxicity:
+
+160k labeled comments from English Wikipedia by approximately 10 annotators via Crowdflower on a spectrum of how toxic the comment is (perceived as likely to make people want to leave the discussion) to how healthy to conversation the contribution is.
+
+Thain, Nithum; Dixon, Lucas; Wulczyn, Ellery (2017): Wikipedia Talk Labels: Toxicity. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4563973.v2
 
 ## Research questions and Results:
 #### **1. Analyze the demographic information about the Crowdflower workers that is available in the dataset and how it fits the real world population.**
