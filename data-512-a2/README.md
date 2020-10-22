@@ -1,30 +1,34 @@
 # DATA 512 A1: Data Curation
 ## Goals:
-The goal of this assignment is to construct, analyze, and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through August 30 2020.
+The goal of this assignment is to identify what, if any, sources of bias may exist in these datasets, and to develop testable hypotheses about how these biases might impact the behavior of machine learning models trained on the data, when those models are used for research purposes or to power data-driven applications. 
 
 ## Data Source:
+The corpus we used is called the Wikipedia Talk corpus, and it consists of three datasets. Each dataset contains thousands of online discussion posts made by Wikipedia editors who were discussing how to write and edit Wikipedia articles. Crowdworkers labelled these posts for three kinds of hostile speech: “toxicity”, “aggression”, and “personal attacks”. Many posts in each dataset were labelled by multiple crowdworkers for each type of hostile speech, to improve accuracy.
 Liscence : [MIT](https://github.com/ankitapal189/data-512/blob/main/data-512-a1/LICENSE.md)<BR>
 Terms of Use : https://www.mediawiki.org/wiki/Wikimedia_REST_API#Terms_and_conditions<BR>
  <BR>
- We used 2 APIs:<BR>
-1.The Legacy Pagecounts API ([Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts), [Endpoint](https://wikimedia.org/api/rest_v1/#!/Pagecounts_data_(legacy)/get_metrics_legacy_pagecounts_aggregate_project_access_site_granularity_start_end))
-December 2007 - July 2016.<BR>
-2.The Pageviews API  ([Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews), [Endpoint](https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end))
-July 2015 - August 2020<BR>
+ We used 2 Daatsets:<BR>
+    1. Wulczyn, Ellery; Thain, Nithum; Dixon, Lucas (2017): Wikipedia Talk Labels: Personal Attacks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4054689.v6<BR>
+  2.Thain, Nithum; Dixon, Lucas; Wulczyn, Ellery (2017): Wikipedia Talk Labels: Toxicity. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4563973.v2
 
-## Describe the values of fields in the final data file:
-| Column | Description |
+## Research questions and Results:
+#### **1. Analyze the demographic information about the Crowdflower workers that is available in the dataset and how it fits the real world population.**
+
+There is a bias in age and education that reflects the general population. There is a gender bias that does not represent the general population.
+
+#### **2. Explore relationships between worker demographics and labeling behavior.**
+
+Gender, education and age does not create a bias on the toxicity and personal attack flag.
+
+## Outputs:
+| Image | Description |
 |--------|-------------|
-| Year | Year|
-| Month | Month|			
-| pageview_desktop_views | Desktop traffic as recorded by Pageviews API  |
-| pageview_mobile_views | Mobile traffic as recorded by Pageviews API  |
-| pagecount_desktop_views | Desktop traffic as recorded by Legacy Pagecounts API |
-| pagecount_mobile_views |  Mobile traffic as recorded by Legacy Pagecounts API   |
-| pageview_all_views | Total traffic as recorded by Pageviews API |
-| pagecount_all_views | Total traffic as recorded by Legacy Pagecounts API |
-
-## Known issues or special considerations with the data that would be useful for another researcher to know :
-1. The date ranges for each API and overlapping date ranges are very useful to knpw. <BR>
-2. Data from the Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not. <BR>
-3. Due to mismatching ranges. We need to replace 0 for the date ranges where API does not provide the relevant data
+| Age_group_demographics.png | Comparison of populations in each age group |
+| Education_demographics.png |  Comparison of populations having various levels of education |			
+| Gender_demographics.png |  Comparison of populations belonging to each gender  |
+| Personal_attack_age_group.png | The age group distribution of the population who flagged comment to be a personal attack |
+| Personal_attack_education_levels.png | The education level distribution of the population who flagged comment to be a personal attack |
+| Personal_attack_gender.png |  The gender distribution of the population who flagged comment to be a personal attack   |
+| Toxicity_age_group.png | The age group distribution of the population who flagged comment to be toxic |
+| Toxicity_education_levels.png | The education level distribution of the population who flagged comment to be toxic |
+| Toxicity_gender.png |  The gender distribution of the population who flagged comment to be toxic   |
